@@ -1,0 +1,223 @@
+@media screen and (max-width: 1200px) {
+	/* --- Favourites from the navbar will not appear---- */
+	.top-section {
+		display: none !important;
+	}
+	/*---Size of search bar reduced---*/
+	.search-bar {
+		width: 30%;
+	}
+	input {
+		font-size: 11px !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/* ----More button pops up in place of aside section2---- */
+	label[for="queue"] {
+		display: block;
+	}
+	/* --Hide aside section 2 --*/
+	.section2 {
+		padding-top: 2%;
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+        background-image: linear-gradient(180deg, black, rgb(102 43 43));	
+       	box-shadow: 0px 0px 2px 1px lightgrey;
+		right: 0px;
+		top: 23.5%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+		transition: opacity ease-in-out 0.2s;
+	}
+	#aside-header{
+		display: none;
+		opacity: 0;
+		transform: scale(0);
+	}
+	#queue-section {
+		margin: 0;
+		 height: 100%; 
+		 overflow: scroll;
+	}
+	
+	/* ---queue button--- */
+	input[id="queue"]:checked ~ .section2 {
+		visibility: visible;
+		opacity: 1;
+	}
+	/* --Hiding section 2 scrollbar-- */
+	.section2::-webkit-scrollbar {
+		display: none;
+	}
+	/* --Making section 1 100% when section-2 is hidden--- */
+	#new-releases img{
+		height:22vw;
+		width:22vw;
+	}
+
+	main{
+		width:90vw;
+
+	}
+/* ---Making space around music themes section--- */
+.music-themes {
+	justify-content: space-around;
+}
+.theme-main {
+	width: 65%;
+}
+	/* ---Theme content--- */
+	/*--Increasing theme content size acc. to web page size--- */
+	.theme-content {
+		width: 12vw;
+		height: 12vw;
+	}
+	.theme-content p {
+		font-size: 3vw;
+		top: -16vw;
+	}
+	/*---Increasing theme image size--- */
+	.music-themes div img {
+		width: 12vw;
+		height: 12vw;
+	}
+
+	#div3 {
+		width: 13vw;
+		height: 13vw;
+	}
+
+	#div3 img {
+		width: 10vw;
+		height: 10vw;
+	}
+
+	.song{
+		min-width: 200px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+/*------Removing volume icon-----*/
+.extras > div:nth-child(3) {
+	display: none;
+}
+/*------Removing slider of volume------*/
+.extras > div:nth-child(4) {
+	display: none;
+}
+
+	.latest-songs-list div:last-child{
+		display:none;
+}
+
+.artist-text{
+	font-size: 0.7rem;
+}
+
+  /*----Adjusting footer---*/
+  .active-song-desc{
+	width: 70%;
+	margin-left: 4px;
+}
+ .active-song-desc div:nth-child(1){
+   font-size: 1.1rem;
+}
+ .active-song-desc div:nth-child(2){
+   font-size: 0.8rem !important;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	
+	/*------------Latest Release---------*/
+	#latest-release-songs>div{
+		height: 75px;
+    width: 45%;
+    margin: 8px;
+	}
+
+	.song-image{
+		height: 70px;
+		width: 75px;
+	}
+
+	.card h3{
+		font-size: 1rem;
+	}
+
+	.dropdown{
+		
+		margin-left: 200px;
+		/* overflow: hidden; */
+	}
+	
+
+	#div3 {
+		width: 26vw;
+		height: 26vw;
+	}
+
+	#div3 img {
+		width: 12vw;
+		height: 12vw;
+	}
+
+	.theme-main {
+		width: 100%;
+	}
+		/* ---Theme content--- */
+		/*--Increasing theme content size acc. to web page size--- */
+		.theme-content {
+			width: 18vw;
+			height: 18vw;
+		}
+		.theme-content p {
+			font-size: 4.5vw;
+			top: -18.8vw;
+		}
+		/*---Increasing theme image size--- */
+		.music-themes div img {
+			width: 18vw;
+			height: 18vw;
+		}
+
+		/*------Footer Section------*/
+
+	/*-----Removing Extras-----*/
+	.bottom{
+		justify-content: space-around;
+	}
+	.extras{
+		display: none;
+	}
+    
+    .active-song-desc{
+    	margin-left: 4%;
+    	width: 40%;
+    }
+    .active-song-desc div:nth-child(1){
+       font-size: 1rem;
+    }
+     .active-song-desc div:nth-child(2){
+       font-size: 0.8rem !important;
+    }
+    .active-active-song-description {
+      width: 44%;
+    }
+    .player{
+    	width: 47%;
+    }
+   .controls>div {
+    padding: 0 5%;
+   }
+
+}

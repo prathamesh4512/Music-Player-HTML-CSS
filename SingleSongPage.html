@@ -1,0 +1,848 @@
+<!--DOCTYPE html tells the browser that the document is a html page-->
+<!DOCTYPE html>
+<!--Begining of html code-->
+<html>
+<!--Begining of Head Section--> 
+<head>
+	 <title>Music Player</title>
+     <!--Favicon-->
+     <link rel="shortcut icon" type="image/jpg" href="Images/icons8-music.png"/>
+      <!--Font Awesome script for using icons from font awesome-->
+	 <script src="https://kit.fontawesome.com/6f0f83005a.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+	 <!--Adds responsiveness to the website-->
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Linking the CSS file-->
+	 <link rel="stylesheet" type="text/css" href="SingleSongStyles.css">
+    <!--Linking the responsive CSS file-->
+   <link rel="stylesheet" type="text/css" href="SingleSongPage-Responsive.css">
+</head>
+<!--End of Head Section-->
+
+<!--Begining of Body Section-->
+<body>
+	<!--Begining of navigation Bar Section-->
+    <nav>
+        <!--Music Player Title Div-->
+        <div id="music-player-logo-name"> 
+             <!--Music Player Logo Div-->
+            <div id="music-player-logo">
+                <img src="Images/music-player-logo1.png">
+            </div>
+            <!--End of Music Player Logo Div-->
+
+            <!--Music Player Name Div-->
+            <div id="music-player-name">
+               <b>Music<br/>Player</b>
+            </div>
+            <!--End of Music Player Logo Div-->
+        </div> 
+         <!--End of Music Player Title Div-->
+
+         <div class="home">
+            <h4>
+                <a href="Index.html" tabindex="-1">Home</a>
+            </h4>
+            <h4>
+               <a href="#playlist-items" tabindex="-1" >Playlist</a>
+            </h4>
+            <h4>
+                <a href="" tabindex="-1" >Favourites</a>
+            </h4>
+        </div>
+
+        <!--Search Bar div-->
+       <div class="search-bar">
+        <div id="magnify-icon">
+            <!-- magnifying glass- search icon -->
+            <i class="fas fa-search search-ico"></i>
+        </div >
+        <input type="text" name="search" placeholder="Search....">
+        <div id="mic-icon">
+            <!-- mic icon -->
+            <i class="fas fa-microphone mic-ico"></i>
+        </div>
+    </div>
+
+    <!--Notification bell-->
+    <div id="notification-bell">
+                <i class="fas fa-bell"></i>
+            </div>
+
+    <!-- Profile picture -->
+    <div class="profile-picture">
+        <img src="Images/profile.png">
+    </div>        
+   </nav>
+   <!--End of navigation bar section-->
+
+<main>
+<!--It has 2 aside sections 1 and 2 for left and right -->
+
+<!--ASIDE SECTION 1-->
+<aside class="aside section-1">
+    
+    <!-- -------------top-section------------------- -->
+    <div class="top-section">
+                <div class=top-section-image>
+                    <!-- Image added by css -->
+                    <img src="Images/prateek.jpg" >
+                </div>
+                <!-- top-section details -->
+                <div class="top-section-detail">
+                    <!-- Descriptive part of the top-section this will contain name , number of followers and all -->
+                    <div class="descriptive-part">
+                        <div class="singer-name">
+                            <h1>Prateek Kuhad</h1>
+                        </div>
+                        <div class="followers">
+                            10M Followers
+                        </div>
+                        <p class="author">Indian Signer</p>
+                        <!-- Description-->
+                        <p class="desc">
+                            Prateek Kuhad grew up in Jaipur, the youngest of three siblings.He is an Solo Indian singer-songwriter and musician who makes independent music in Hindi and English. He is best known for his track "cold/mess".
+                        </p>
+                    </div>
+                    <!-- Action part -->
+                    <div class="action-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button><a href="#">Follow</a></button>
+                        </div>
+                        <p>
+                            20 Tracks | 5 Albums
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<!--PLAYLIST ITEMS -->
+
+<div class="playlist-items" id="playlist-items">
+
+    <!-- Playlist item 1-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         01
+                     </div>
+                     <div>
+                     <img src="Images/prateek1.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Tune kaha
+                         </h5>
+                 </div>
+                 <div class="center">
+                     3:21
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+
+     <!-- Playlist item 2-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         02
+                     </div>
+                     <div>
+                         <img src="Images/prateek1.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+
+                         <h5>
+                            cold/mess 
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:34
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+ <!-- Playlist item 3-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         03
+                     </div>
+                     <div>
+                     <img src="Images/prateek1.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Holding on
+                         </h5>
+                 </div>
+                 <div class="center">
+                     3:21
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+     <!-- Playlist item 4-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         04
+                     </div>
+                     <div>
+                         <img src="Images/prateek1.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Khone do
+                         </h5>
+                 </div>
+                 <div class="center">
+                     3:45
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+  
+  <!-- Playlist item 5-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         05
+                     </div>
+                     <div>
+                     <img src="Images/prateek1.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Hoga kya
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:41
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 6-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         06
+                     </div>
+                     <div>
+                         <img src="Images/prateek1.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5 >
+                             ohh love
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:34
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 7-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         07
+                     </div>
+                     <div>
+                     <img src="Images/prateek1.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Kadam pe
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:34
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 8-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         08
+                     </div>
+                     <div>
+                         <img src="Images/prateek.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Tum Pass
+                         </h5>
+                 </div>
+                 <div class="center">
+                     4:25
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 9-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         09
+                     </div>
+                     <div>
+                     <img src="Images/prateek.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Khone Do
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:56
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 10-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         10
+                     </div>
+                     <div>
+                         <img src="Images/prateek.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Saansien
+                         </h5>
+                 </div>
+                 <div class="center">
+                     2:56
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+
+   <!-- Playlist item 11-->
+             <div class="playlist-item">
+                 <div class="left">
+                     <div>
+                         11
+                     </div>
+                     <div>
+                     <img src="Images/prateek.jpg">                        
+                     <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                         <h5>
+                             Cold/mess
+                         </h5>
+                 </div>
+                 <div class="center">
+                     4:11
+                 </div>
+                 <div class="right">
+                     <div>
+                         <i class="far fa-heart"></i>
+                     </div>
+                     <div>
+                         <i class="fas fa-plus"></i>
+                     </div>
+                 </div>
+             </div>
+    </div>
+    </aside>
+<!--End of ASIDE SECTION 1-->
+
+
+
+<!--ASIDE SECTION 2 -->
+
+      <!-- -------Label for more button ------- -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+
+      <!-- checkbox for makin more button expand -->
+     <input type="checkbox" id="more">
+
+
+     <aside class="aside section-2">
+
+         <!--Similar class will be applicable to both similar artists and recently played -->
+         <div class="similar">
+
+              <!-- --Section heading ---->
+             <div class="section-heading">
+                 <h1>Similar Artists</h1>
+                 <div class="view-all-button">
+                     View All
+                 </div>
+             </div>
+
+         <!-- -----List of similar artists--------- -->
+         <div class="list">
+                 <!-- Item 1 -->
+                 <div class="list-item">
+                     <div>
+                    <img src="Images/lukus.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                     <div style="position: absolute; left:120px;">
+                         <h4>
+                             7 years
+                         </h4>
+                         <p class="author-name">
+                            Lukas graham
+                         </p>
+                     </div>
+                     <div class="extra">
+                         <div>
+                             <i class="fas fa-ellipsis-h"></i>
+                         </div>
+                         <p class="author-name">
+                             4:25
+                         </p>
+                     </div>
+                 </div>
+
+
+                 <!-- Item 2 -->
+                 <div class="list-item">
+                     <div>
+                         <img src="Images/kygo.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                     <div style="position: absolute; left:120px;">
+                         <h4>
+                             Hello
+                         </h4>
+                         <p class="author-name">
+                             kygo
+                         </p>
+                     </div>
+                     <div class="extra">
+                         <div>
+                             <i class="fas fa-ellipsis-h"></i>
+                         </div>
+                         <p class="author-name">
+                             3:10
+                         </p>
+                     </div>
+                 </div>
+
+
+                 <!-- Item 3 -->
+                 <div class="list-item">
+                     <div>
+                         <img src="Images/edsheeran.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                     <div style="position: absolute; left:120px;">
+                         <h4>
+                             Prefect
+                         </h4>
+                         <p class="author-name">
+                             Ed Sheeran
+                         </p>
+                     </div>
+                     <div class="extra">
+                         <div>
+                             <i class="fas fa-ellipsis-h"></i>
+                         </div>
+                         <p class="author-name">
+                             3:20
+                         </p>
+                     </div>
+                 </div>
+
+                  <!-- Item 4 -->
+                 <div class="list-item">
+                     <div>
+                         <img src="Images/bruno.jpg">
+                         <div class="play-btn">
+                             <i class="fas fa-play"></i>
+                         </div>
+                     </div>
+                     <div style="position: absolute; left:120px;">
+                         <h4>
+                             24k Magic
+                         </h4>
+                         <p class="author-name">
+                            Bruno Mars
+                         </p>
+                     </div>
+                     <div class="extra">
+                         <div>
+                             <i class="fas fa-ellipsis-h"></i>
+                         </div>
+                         <p class="author-name">
+                             4:40
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <!-- -----------------Similar artists ends-------------- -->
+
+
+        <!---------- Recently played section ---------------->
+             <div class="similar">
+                 <!-- section headings, which also contains the view all button -->
+                 <div class="section-heading" id="recently-played">
+                     <h1>Recently Played</h1>
+                     <div class="view-all-button">
+                         View All
+                     </div>
+                 </div>
+                 <!-- again list is a container for all the contents of recently played section -->
+                 <div class="list">
+
+                     <!-- Item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 01
+                             </div>
+                             <div>
+                                 <img src="Images/edsheeran.jpg">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                     Shape of you
+                                 </h5>
+                                 <p>
+                                     Ed Sheeran
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                    <!-- Item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 02
+                             </div>
+                             <div>
+                                 <img src="Images/lukus.jpg">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                     7 years
+                                 </h5>
+                                 <p>
+                                     Lukas
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 03
+                             </div>
+                             <div>
+                             <img src="Images/shawn.jpg">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                    Stitches
+                                 </h5>
+                                 <p>
+                                     Shawn Mendes
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+                    
+                      <!-- Item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 04
+                             </div>
+                             <div>
+                                 <img src="Images/charile.jpg">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                     Attention
+                                 </h5>
+                                 <p>
+                                    Charlie Puth
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                    <!-- Item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 05
+                             </div>
+                             <div>
+                                 <img src="Images/bruno.jpg">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                     24k Magic
+                                 </h5>
+                                 <p>
+                                     Bruno
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- item -->
+                     <div class="playlist-item">
+                         <div class="left">
+                             <div>
+                                 06
+                             </div>
+                             <div>
+                             <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Powfu_-_Death_Bed.png">
+                                 <div class="play-btn">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>
+                                     Love life
+                                 </h5>
+                                 <p>
+                                     Martin
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="right">
+                             <div>
+                                 <i class="far fa-heart"></i>
+                             </div>
+                         </div>
+                     </div>
+     </aside>
+</main>
+
+<!-- -----------FOOTER--------------------->
+
+<footer class="bottom" id="bottom-click">
+
+	<div class="active-song-description">
+            <!-- -Song image- -->
+            <div id="song-image">
+              <img src="Images/prateek.jpg">
+            </div>
+
+            <!--- song name and singer --->
+            <div class="song-desc">
+                <div>
+                  Tune Kaha 
+                </div>
+                <div style="color: grey;">
+                    Prateek Kuhad
+                </div>
+                <!-- Heart icon and Ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span> &nbsp</span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+   <!-- -------Player Controls--------- -->
+
+    <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+
+            <!-- --Slider ----->
+            <div id="slider">
+             <!--- Current time -->
+                <div class="time">
+                    0:00
+                </div>
+
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+
+                <!-- Duration -->
+                <div class="time">
+                    5:10
+                </div>
+            </div>
+
+        </div>
+
+ <!--- Other icons including the volume slider------>
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+</footer>
+   </body>
+</html>

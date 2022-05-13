@@ -1,0 +1,792 @@
+<!--DOCTYPE html tells the browser that the document is a html page-->
+<!DOCTYPE html>
+<!--Begining of html code-->
+<html>
+<!--Begining of Head Section--> 
+<head>
+	 <title>Music Player</title>
+     <link rel="shortcut icon" type="image/jpg" href="Images/icons8-music.png"/>
+	 <!--Linking the CSS file-->
+	 <link rel="stylesheet" type="text/css" href="IndexStyles.css">
+     <!-- Linking responsive file -->
+     <link rel="stylesheet" type="text/css" href="Index-Responsive.css">
+      <!--Font Awesome script for using icons from font awesome-->
+	 <script src="https://kit.fontawesome.com/6f0f83005a.js" crossorigin="anonymous"></script>
+	 <!--Adds responsiveness to the website-->
+     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+</head>
+<!--End of Head Section-->
+
+<!--Begining of Body Section-->
+<body>
+	<!--Begining of navigation Bar Section-->
+    <nav>
+        <!--Music Player Title Div-->
+        <div id="music-player-logo-name"> 
+             <!--Music Player Logo Div-->
+            <div id="music-player-logo">
+                <img src="Images/music-player-logo1.png">
+            </div>
+            <!--End of Music Player Logo Div-->
+
+            <!--Music Player Name Div-->
+            <div id="music-player-name">
+               <b>Music<br/>Player</b>
+            </div>
+            <!--End of Music Player Logo Div-->
+        </div> 
+         <!--End of Music Player Title Div-->
+
+         <div class="top-section">
+            <h4>
+                <a href="#music-player-logo" tabindex="-1">Home</a>
+            </h4>
+            <h4>
+               <a href="#latest-release" tabindex="-1">Lastest Release</a>
+            </h4>
+            <h4>
+                <a href="#popular-artists" tabindex="-1">Popular-Artists</a>
+            </h4>
+            <h4>
+                <a href="#music-section" tabindex="-1">Music Section</a>
+            </h4>
+            <h4>
+                <a href="#latest-songs" tabindex="-1">Lastest Songs</a>
+            </h4>
+        </div>
+
+         <!-- Search Bar Notify User div -->
+         <div id="search-bar-notify-user">
+             <!--Search Bar div-->
+            <div id="search-bar">
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <!--Search Icon-->
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <!--End of Search Bar div-->
+            
+            <!--Notification Bell div-->
+		    <div id="notification-bell">
+                <i class="fas fa-bell"></i>
+            </div>
+            <!--End of Notification Bell div-->
+
+            <!--User Image div-->
+            <div id="user">
+                <img src="Images/profile.png">
+            </div>
+            
+        </div>
+       <!-- End of Search Bar Notify User div -->
+        
+   </nav>
+   <!--End of navigation bar section-->
+
+   <main>
+    
+    <!--Home Screen Carousel which is slideshown with class slideshow-->
+		<div id="new-releases">
+            <img src="Images/new-music-2.jpg">
+            <img src="Images/new-music-1.jpg">
+            <img src="Images/new-music-3.jpg">
+       </div>
+       <!--End of home screen carousel-->
+
+    <!--Begining of latest release section-->
+    <div id="latest-release">
+        <!-- --Heading-- -->
+        <h1 style="margin-bottom: 12px;">
+            Latest Release
+        </h1>
+        <!-- Begining latest released song div -->
+        <div id="latest-release-songs">
+            <!--Begining of song 1-->
+            <div class="song">
+                <div class="song-image" id="firstsong">
+                    <div class="song-image-button hide">
+                        <a href="#music-bar" ><i class="fas fa-play"></i></a>
+                   </div>
+                </div>
+
+                <div class="song-title hide">
+                    <b>Believer</b>
+                    <p style="color:lightgrey">Januray, 2022 &emsp;&emsp; 3:36</p>
+                </div>
+                
+                <!--End of song details Section -->
+                <!--Dropdown Section-->
+                <div class="dropdown">
+                <i class="fas fa-chevron-circle-down">
+                <div class="dropdown-menu hide">
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-play"></i>
+                         &nbsp;
+                         <a href="#music-bar">Play Now</a>
+                    </div>
+                    <hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to queue</a>
+                    </div>
+                    <hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to favourite</a>
+                    </div>
+                    <hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-exclamation-circle"></i>
+                         &nbsp;
+                         <a href="#latest-release">Song info</a>
+                    </div>
+                </div></i>
+                <!-- <p class="song-duration">
+                    4:42
+                </p> -->
+                </div>
+                <!--End of dropdown section--> 
+            </div> 
+            <!--End of song 1-->
+            
+            <div class="song">
+                <div class="song-image" id="secondsong">
+                    <div class="song-image-button hide">
+                        <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+                   </div>
+                </div>
+
+
+                <div class="song-title hide">
+                    <b>Hymn</b>
+                    <p style="color:lightgrey">Januray, 2022 &emsp;&emsp; 3:56</p>
+                </div>
+                
+                <!--End of song details Section -->
+                <!--Dropdown Section-->
+                <div class="dropdown">
+                    <i class="fas fa-chevron-circle-down">
+                    <div class="dropdown-menu hide">
+                        <div class="dropdown-menu-item">
+                            <i class="fas fa-play"></i>
+                            &nbsp;
+                            <a href="#music-bar">Play Now</a>
+                        </div>
+                        <hr/>
+                        <div class="dropdown-menu-item">
+                            <i class="fas fa-plus"></i>
+                            &nbsp;
+                            <a href="#latest-release">Add to queue</a>
+                        </div>
+                        <hr/>
+                        <div class="dropdown-menu-item">
+                            <i class="fas fa-plus"></i>
+                            &nbsp;
+                            <a href="#latest-release">Add to favourite</a>
+                        </div>
+                        <hr/>
+                        <div class="dropdown-menu-item">
+                            <i class="fas fa-exclamation-circle"></i>
+                            &nbsp;
+                            <a href="#latest-release">Song info</a>
+                        </div>
+                </div></i>
+                <!-- <p class="song-duration">
+                    4:42
+                </p> -->
+                </div> 
+            </div>
+
+
+            <div class="song">
+                <div class="song-image" id="thirdsong">
+                    <div class="song-image-button hide">
+                        <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+                   </div>
+                </div>
+
+                <div class="song-title hide">
+                    <b>memories</b>
+                    <p style="color:lightgrey">Januray, 2022 &emsp;&emsp; 3:30</p>
+                </div>
+                
+                <!--End of song details Section -->
+                <!--Dropdown Section-->
+                <div class="dropdown">
+                <i class="fas fa-chevron-circle-down">
+                <div class="dropdown-menu hide">
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-play"></i>
+                         &nbsp;
+                         <a href="#music-bar">Play Now</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to queue</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to favourite</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-exclamation-circle"></i>
+                         &nbsp;
+                         <a href="#latest-release">Song info</a>
+                    </div>
+                </div></i>
+                <!-- <p class="song-duration">
+                    4:42
+                </p> -->
+                </div> 
+            </div>
+
+
+            <div class="song">
+                <div class="song-image" id="fourthsong">
+                    <div class="song-image-button hide">
+                        <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+                   </div>
+                </div>
+
+                <div class="song-title hide">
+                    <b>Rock on</b>
+                    <p style="color:lightgrey">Januray, 2022 &emsp;&emsp; 3:20</p>
+                </div>
+                
+                <!--End of song details Section -->
+                <!--Dropdown Section-->
+                <div class="dropdown">
+                <i class="fas fa-chevron-circle-down">
+                <div class="dropdown-menu hide">
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-play"></i>
+                         &nbsp;
+                         <a href="#music-bar">Play Now</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to queue</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-plus"></i>
+                         &nbsp;
+                         <a href="#latest-release">Add to favourite</a>
+                    </div><hr/>
+                    <div class="dropdown-menu-item">
+                        <i class="fas fa-exclamation-circle"></i>
+                         &nbsp;
+                         <a href="#latest-release">Song info</a>
+                    </div>
+                </div></i>
+                <!-- <p class="song-duration">
+                    4:42
+                </p> -->
+                </div> 
+            </div>
+            <!--End of song 4-->
+        </div>
+    </div>
+    <!--End of latest release section-->
+
+    <!--Begining of Popular Artists section-->
+    <div id="popular-artists">
+        <h1>Popular Artists</h1>
+
+        <div class="artists-list">
+            <div class="artist-image" id="first-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">Prateek Kuhad </a>
+                </div>
+            </div>
+            <!-- Second-Artist -->
+            <div class="artist-image" id="second-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">Arjit Singh </a>
+                </div>
+            </div>
+            <!-- Third Artist -->
+            <div class="artist-image" id="third-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">Shaan </a>
+                </div>
+            </div>
+            <!-- Fourth Artist -->
+            <div class="artist-image" id="fourth-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">KK </a>
+                </div>
+            </div>
+            <!-- Fifth Artist -->
+            <div class="artist-image" id="fifth-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">Sunidhi Chauhan </a>
+                </div>
+            </div>
+            <!-- Sixth Artist -->
+            <div class="artist-image" id="sixth-image">
+                <div class="artist-text hide">
+                    <a href="SingleSongPage.html">Shreya Ghoshal </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Popular Artists section-->
+
+    <!--Begining of playlist section-->
+    <div class="music" id="music-section">
+        <h1>Music Stations</h1>
+        <div class="music-themes">
+            <div class="stations">
+                <div id="div3">
+                    <img src="https://www.shareicon.net/data/512x512/2015/10/20/658916_music_512x512.png">
+                    <!-- <p>STATIONS</p> -->
+                </div>
+            </div>
+
+        <!---Content part of them themes--- -->
+        <!-----Changes colors on hover---- -->
+        <div class="theme-main" >
+            <div class="theme-content">
+                <img src="Images/music themes/rock.jpg">
+                <p>Rock</p>
+            </div>
+            <div class="theme-content">
+                <img src="Images/music themes/love.jpg">
+                <p >Love</p>
+            </div>
+            <div class="theme-content">
+                <img src="Images/music themes/chill.jpg">                
+                <p >Chill</p>
+            </div>
+            <div class="theme-content">
+                <img src="Images/music themes/retro.jpg">
+                <p >Retro</p>
+            </div>
+             <div class="theme-content">
+                <img src="Images/music themes/pop.jpg">
+                <p >Pop</p>
+            </div>
+            <div class="theme-content">
+                <img src="Images/music themes/workout.jpg">
+                <p >Workout</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--End of playlist section-->
+
+<!-- Begining of lastest release songs -->
+    <div id="latest-songs">
+        <!--Latest English Songs title-->
+        <h1>Latest English Songs</h1>
+        <!--Songs List Div-->
+        <div class="latest-songs-list">
+            <!--Song 1-->
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-english-1.jpg">
+                    <p><b>Stories</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-english-2.jpg">
+                    <p><b>Peace</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-english-3.jpg">
+                    <p><b>Prefect</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-english-4.jpg">
+                    <p><b>The way</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-english-5.jpg">
+                    <p><b>Beliver</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+       </div>
+       <!--End of songs list div-->
+    </div>
+    <!--End of latest english songs section-->
+
+
+    <div id="latest-songs">
+        <!--Latest English Songs title-->
+        <h1>Latest Hindi Songs</h1>
+        <!--Songs List Div-->
+        <div class="latest-songs-list">
+            <!--Song 1-->
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-hindi-1.jpg">
+                    <p><b>Tum hi ho</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-hindi-2.jpg">
+                    <p><b>Pal</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-hindi-3.jpg">
+                    <p><b>Aye Khuda</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-hindi-4.jpg">
+                    <p><b>Tum Tak</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+
+            <div class="latest-songs-item">
+                <!--Song Image-->
+                    <img src="Images/new-hindi-5.jpg">
+                    <p><b>Atrangi re</b><br/><date style="color:lightgrey">March, 2022</date></p>
+            </div>
+       </div>
+       <!--End of songs list div-->
+    </div>
+</main>
+
+    <!--Begining of aside section-->
+
+         <!--- Label for that button -------->
+         <label for="queue"><i class="fas fa-chevron-left"></i> Queue</label>
+
+         <!---- Check box , this will always be hidden ----->
+         <!-- when the label is clicked, this checkbox will be checked  this will show the
+            aside section ---->
+         <input type="checkbox" id="queue">
+
+         <aside class=" aside section2">
+            <!--Aside section header-->
+               <div id="aside-header">
+                <!--Aside section title-->
+                 <div id="aside-title">
+                   Queue 
+                 </div>
+                <!--End of aside section title-->
+                <!--Dropdown menu-->
+                <div id="aside-dropdown">
+                    <form>
+                        <select>
+                            <option id="Queue" label="Queue">Queue</option>
+                            <option id="Playlist" lable="Playlist">Playlist</option>
+                        </select>
+                    </form>
+                </div>
+                <!--End of dropdown menu-->
+                </div>
+                <!--End of aside section header-->
+
+            <!--List of Songs-->
+            <div id="queue-section">
+                <!--Song 1-->
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number">
+                            01
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/shawn.jpg">
+                                <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                 Attention
+                            </div>
+                            <p>
+                                Shwan mendes
+                            </p>
+                        </div>
+                        <!--End of song title-->
+                    </div>
+
+                    <!--Favourite icon-->
+                    <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                    </div>
+                    <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+
+                <!--Song 2-->
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number">
+                            02
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/lukus.jpg">
+                                 <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                 </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                 7 years
+                            </div>
+                            <p>
+                                Lukas &nbsp; graham
+                            </p>
+                        </div>
+                 <!--End of song title-->
+                </div>
+
+                <!--Favourite icon-->
+                 <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                 </div>
+                 <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number">
+                            03
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/edsheeran.jpg">
+                                 <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                 </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                 Someone like
+                            </div>
+                            <p>
+                                Ed sheeran
+                            </p>
+                        </div>
+                 <!--End of song title-->
+                </div>
+
+                <!--Favourite icon-->
+                 <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                 </div>
+                 <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number">
+                            04
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/kygo.jpg">
+                                 <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                 </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                Love in the air
+                            </div>
+                            <p>
+                                Dj kyjo
+                            </p>
+                        </div>
+                 <!--End of song title-->
+                </div>
+
+                <!--Favourite icon-->
+                 <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                 </div>
+                 <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number">
+                            05
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/bruno.jpg">
+                                 <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                 </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                 Uptown Funk &nbsp;
+                            </div>
+                            <p>
+                                Bruno Mars
+                            </p>
+                        </div>
+                 <!--End of song title-->
+                </div>
+
+                <!--Favourite icon-->
+                 <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                 </div>
+                 <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+
+                <div class="queue-item">
+                    <div class="left-section">
+                        <div class="queue-number"> 
+                            06
+                        </div>
+                        <div class="queue-item-img">
+                             <!-- --shows play button on hover ------ -->
+                             <img src="Images/adele.jpg">
+                                 <div class="play-button" >
+                                     <i class="fas fa-play" aria-hidden="true" ></i>
+                                 </div>
+                        </div>
+                        <!--Song title-->
+                        <div class="queue-item-title">
+                            <div>
+                                 Young forever
+                            </div>
+                            <p >
+                                Adele
+                            </p>
+                        </div>
+                 <!--End of song title-->
+                </div>
+
+                <!--Favourite icon-->
+                 <div class="queue-favourite">
+                     <i class="far fa-heart"></i>
+                 </div>
+                 <!--End of favourite icon-->
+                </div>
+                <!--End of song 1-->
+                
+            </div>
+       </aside>
+       <!-- End of aside section -->
+
+       <!-- Footer -->
+       <footer class="bottom" id="music-bar">
+        <div class="active-active-song-description">
+            <!-- -Song image- -->
+            <div id="active-song-image">
+              <img src="Images/prateek.jpg">
+            </div>
+
+            <!--- song name and singer --->
+            <div class="active-song-desc">
+                <div>
+                  Tune Kaha
+                </div>
+                <div >
+                    Prateek
+                </div>
+                <!-- Heart icon and Ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span> &nbsp</span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+
+        <!-- -------Player Controls--------- -->
+
+    <div class="player">
+        <div class="controls">
+            <div><i class="fas fa-random"></i></div>
+            <div><i class="fas fa-step-backward"></i></div>
+            <div><i class="fas fa-pause"></i></div>
+            <div><i class="fas fa-step-forward"></i></div>
+            <div><i class="fas fa-redo"></i></div>
+        </div>
+
+        <!-- --Slider ----->
+        <div id="slider">
+         <!--- Current time -->
+            <div class="time">
+                0:00
+            </div>
+
+            <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+            </div>
+
+            <!-- Duration -->
+            <div class="time">
+                5:10
+            </div>
+        </div>
+
+    </div>
+
+<!--- Other icons including the volume slider------>
+    <div class="extras">
+        <div>
+            <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+            <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+            <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width:30%;">
+            <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+        </div>
+        <div>
+            <i class="fas fa-expand-alt"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+        
+         
+         
+
+
+   
+   
+            
+        
+
+
+
+    
