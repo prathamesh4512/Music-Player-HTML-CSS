@@ -2,7 +2,7 @@
 A fully responsive front-end of music player web app develope using only HTML & CSS 
 
 ## Deployment 
-Working link -> 
+Working link -> https://prathamesh4512.github.io/Music-Player-HTML-CSS/
 
 ## Description 
 - By clicking on any song in the lastest release section,footer open with the song info, play,pause buttons
